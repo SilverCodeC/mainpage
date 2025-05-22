@@ -3,80 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | MainPageV5</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../../global-settings.css">
-    <link rel="stylesheet" href="./special.css">
-    <script src="./script.js"></script>
-</head>
-<body>
-    <nav>
-        <div class="nav-items">
-            <li></li>
-            <li><a id="home" href="../../index.html">Home</a></li>
-            <li></li>
-            <li><a id="projects" href="../projects/index.html">Projects</a></li>
-            <li></li>
-            <li><a id="skills" href="../skills/index.html">Skills</a></li>
-            <li></li>
-            <li><a id="bio" href="../bio/index.html">Bio</a></li>
-            <li></li>
-        </div>
-        <div class="wg"></div>
-    </nav>
-    <div class="divider">LOADED</div>
-    <div class="content1">
-        <div class="d1">
-        <h1>I AM <br> SilverSniper</h1>
-        </div>
-    </div>
-    <div class="rain-container">
-    </div>
-    <div class="container" id="typing-container"></div>
-<div id="cpr">© SilverSniper | 2021-2025</div>
-    <script src="script.js"></script>
-    <script>
-  const text = `
-C:/Users/SilverSniper>ssh root@xxx.xxx.xxx.xxx
-C:/Users/SilverSniper>password
-root@silversniper:~# Welcome to my bio.
-root@silversniper:~# If you care about it at least.
-root@silversniper:~# I put some work and dedication into it.
-root@silversniper:~# I hope you like it so far.
-root@silversniper:~# I really like trying my best sometimes.
-root@silversniper:~# I know i am capable of stuff when i want to.
-root@silversniper:~# And i know that you can that too.
-root@silversniper:~# Find the right people who can get out the best of you.
-root@silversniper:~# Not the ones who show you tough love, thats bullying tbh.
-root@silversniper:~# Strive for the best, stop watching shorts or videos about self improving...
-root@silversniper:~# Find your ways to define yourself, and to define your story.
-root@silversniper:~# Dont be a copy cat, everybody has their own path.
-root@silversniper:~# Besides that.
-root@silversniper:~# I am happy who I am so far.
-root@silversniper:~# So my story goes like this.
-root@silversniper:~# I was joking, I wont tell you more than you know now.
-logout
-Connection to xxx.xxx.xxx.xxx closed
-C:/Users/SilverSniper> To be continued...
-`;
+    <title>About SilverSniper | Developer & Technology Enthusiast</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn more about SilverSniper, a developer and technology enthusiast with expertise in web development, networking, and system administration. Discover my journey, interests, and approach to development.">
+    <meta name="keywords" content="SilverSniper, about, bio, developer, technology enthusiast, web development, personal journey, professional background">
+    <meta name="author" content="SilverSniper">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://silversnipers.com/pages/bio/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://silversnipers.com/pages/bio/">
+    <meta property="og:title" content="About SilverSniper | Developer & Technology Enthusiast">
+    <meta property="og:description" content="Learn more about SilverSniper, a developer and technology enthusiast with expertise in web development, networking, and system administration.">
+    <meta property="og:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    <meta property="profile:first_name" content="Silver">
+    <meta property="profile:last_name" content="Sniper">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://silversnipers.com/pages/bio/">
+    <meta property="twitter:title" content="About SilverSniper | Developer & Technology Enthusiast">
+    <meta property="twitter:description" content="Learn more about SilverSniper, a developer and technology enthusiast with expertise in web development, networking, and system administration.">
+    <meta property="twitter:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/76661d0faf.js" crossorigin="anonymous"></script>
 
-
-    const typingSpeed = 50;
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.getElementById('typing-container');
-      let index = 0;
-
-      function typeText() {
-        if (index < text.length) {
-          container.innerHTML += text.charAt(index);
-          index++;
-          setTimeout(typeText, typingSpeed);
-        }
+    <!-- Google Fonts - Geist Sans & Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Include System -->
+    <script src="/assets/js/includes.js"></script>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About SilverSniper",
+      "description": "Learn more about SilverSniper, a developer and technology enthusiast.",
+      "url": "https://silversnipers.com/pages/bio/",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "SilverSniper",
+        "url": "https://silversnipers.com",
+        "description": "Developer and technology enthusiast with expertise in web development, networking, and system administration.",
+        "jobTitle": "Developer & Technology Enthusiast",
+        "knowsAbout": ["Web Development", "Networking", "System Administration", "Proxmox", "ESXI"],
+        "sameAs": [
+          "https://github.com/yourusername",
+          "https://linkedin.com/in/yourusername",
+          "https://twitter.com/yourusername"
+        ]
       }
-
-      typeText();
-    });
+    }
     </script>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+    <!-- Header (loaded via include) -->
+    <div data-include="/includes/header.html"></div>
+
+    <!-- Page Header -->
+    <section class="py-16 bg-zinc-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h1>
+                <p class="text-zinc-400">Get to know more about who I am and what drives me.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-zinc-900 rounded-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-white mb-4">Who I Am</h2>
+                    <p class="text-zinc-300 mb-4">
+                        I'm SilverSniper, a developer and technology enthusiast with a passion for creating clean, functional web experiences.
+                        My journey in tech has led me to explore various areas including web development, networking, and system administration.
+                    </p>
+                    <p class="text-zinc-300 mb-4">
+                        I believe in continuous learning and pushing my skills to new heights. When I'm not coding, you can find me
+                        exploring new technologies, gaming, or working on my music projects.
+                    </p>
+                    <p class="text-zinc-300">
+                        My approach to development focuses on creating solutions that are not only functional but also user-friendly and visually appealing.
+                        I enjoy the challenge of solving complex problems and turning ideas into reality through code.
+                    </p>
+                </div>
+                
+                <div class="bg-zinc-900 rounded-lg p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-white mb-4">My Journey</h2>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-emerald-500 pl-4">
+                            <h3 class="text-lg font-semibold text-white">Started Web Development</h3>
+                            <p class="text-zinc-400 text-sm mb-2">2021</p>
+                            <p class="text-zinc-300">Began learning HTML, CSS, and basic web design principles. Created my first static websites.</p>
+                        </div>
+                        
+                        <div class="border-l-2 border-emerald-500 pl-4">
+                            <h3 class="text-lg font-semibold text-white">Expanded Technical Skills</h3>
+                            <p class="text-zinc-400 text-sm mb-2">2022</p>
+                            <p class="text-zinc-300">Learned about server administration, networking, and virtualization technologies like Proxmox and ESXI.</p>
+                        </div>
+                        
+                        <div class="border-l-2 border-emerald-500 pl-4">
+                            <h3 class="text-lg font-semibold text-white">Advanced Projects</h3>
+                            <p class="text-zinc-400 text-sm mb-2">2023-Present</p>
+                            <p class="text-zinc-300">Working on more complex web applications and continuing to expand my knowledge in various technical domains.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-zinc-900 rounded-lg p-8">
+                    <h2 class="text-2xl font-bold text-white mb-4">Personal Interests</h2>
+                    <ul class="space-y-3 text-zinc-300">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2"><i class="fas fa-headphones" aria-hidden="true"></i></span>
+                            <span>Music production and curation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2"><i class="fas fa-gamepad" aria-hidden="true"></i></span>
+                            <span>Gaming and game development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2"><i class="fas fa-desktop" aria-hidden="true"></i></span>
+                            <span>Building and customizing PCs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 mr-2"><i class="fas fa-crosshairs" aria-hidden="true"></i></span>
+                            <span>Airsoft and outdoor activities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-zinc-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Get In Touch</h2>
+                <p class="text-zinc-400 mb-8">Interested in working together or have questions? Feel free to reach out.</p>
+                <a href="mailto:contact@silversnipers.com" class="inline-block px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (loaded via include) -->
+    <div data-include="/includes/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

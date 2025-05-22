@@ -3,258 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | MainPageV5</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="../../script.js"></script>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="../../global-settings.css">
+    <title>Web Development Projects | SilverSniper Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore SilverSniper's web development and design projects. View a collection of responsive websites, web applications, and design work.">
+    <meta name="keywords" content="web development, projects, portfolio, SilverSniper, web design, responsive websites">
+    <meta name="author" content="SilverSniper">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://silversnipers.com/pages/projects/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://silversnipers.com/pages/projects/">
+    <meta property="og:title" content="Web Development Projects | SilverSniper Portfolio">
+    <meta property="og:description" content="Explore SilverSniper's web development and design projects. View a collection of responsive websites, web applications, and design work.">
+    <meta property="og:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://silversnipers.com/pages/projects/">
+    <meta property="twitter:title" content="Web Development Projects | SilverSniper Portfolio">
+    <meta property="twitter:description" content="Explore SilverSniper's web development and design projects. View a collection of responsive websites, web applications, and design work.">
+    <meta property="twitter:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/76661d0faf.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts - Geist Sans & Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Include System -->
+    <script src="/assets/js/includes.js"></script>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Web Development Projects",
+      "description": "A collection of web development and design projects by SilverSniper.",
+      "url": "https://silversnipers.com/pages/projects/",
+      "author": {
+        "@type": "Person",
+        "name": "SilverSniper",
+        "url": "https://silversnipers.com"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "WebSite",
+            "position": 1,
+            "name": "Main Page V4",
+            "description": "A responsive landing page with modern design elements.",
+            "url": "https://v3-main-page.netlify.app/"
+          },
+          {
+            "@type": "WebSite",
+            "position": 2,
+            "name": "Page 8 Redesign",
+            "description": "A modern web application with clean UI and smooth interactions.",
+            "url": "https://sebys-page-8-reworked.netlify.app/"
+          },
+          {
+            "@type": "WebSite",
+            "position": 3,
+            "name": "Assets Page",
+            "description": "A collection of design assets and resources for developers.",
+            "url": "https://sebys-page-10-assets-page.netlify.app/"
+          }
+        ]
+      }
+    }
+    </script>
 </head>
-<body>
-    <div id="rain"></div>
-    <div class="container">
-        <div class="moon"></div>
-      </div>
-    <nav>
-        <div class="nav-items">
-            <li></li>
-            <li><a id="home" href="../../index.html">Home</a></li>
-            <li></li>
-            <li><a id="projects" href="./index.html">Projects</a></li>
-            <li></li>
-            <li><a id="skills" href="../skills/index.html">Skills</a></li>
-            <li></li>
-            <li><a id="bio" href="../bio/index.html">Bio</a></li>
-            <li></li>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+    <!-- Header (loaded via include) -->
+    <div data-include="/includes/header.html"></div>
+
+    <!-- Page Header -->
+    <section class="py-16 bg-zinc-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h1>
+                <p class="text-zinc-400">A collection of web development and design projects I've worked on.</p>
+            </div>
         </div>
-        <div class="wg"></div>
-    </nav>
-    <div class="divider">LOADED</div>
-    <div class="content1">
-        <div class="d1">
-        <h1>Projects</h1>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="py-8 border-b border-zinc-800">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <button class="filter-btn active px-4 py-2 rounded-md bg-emerald-600 text-white" data-filter="all">All Projects</button>
+                    <button class="filter-btn px-4 py-2 rounded-md bg-zinc-800 text-zinc-300 hover:bg-zinc-700" data-filter="web">Web Design</button>
+                    <button class="filter-btn px-4 py-2 rounded-md bg-zinc-800 text-zinc-300 hover:bg-zinc-700" data-filter="main">Main Pages</button>
+                    <button class="filter-btn px-4 py-2 rounded-md bg-zinc-800 text-zinc-300 hover:bg-zinc-700" data-filter="other">Other</button>
+                </div>
+            </div>
         </div>
-    </div>
-<div class="master">
-    <div class="content2">
-        <div style="--an: 1;" class="wg1"></div>
-        <div style="--an: 1;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 1;" onclick="openPage('https://randompage.netlify.app/')">Page 1</h1>
-    </div>
-    <div class="content3">
-        <div style="--an: 2;" class="wg1"></div>
-        <div style="--an: 2;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 2;" onclick="openPage('https://random-page-1-rework.netlify.app/')">Page 1 ver. 2</h1>
-        
-    </div>
-    <div class="content4">
-        <div style="--an: 3;" class="wg1"></div>
-        <div style="--an: 3;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 3;" onclick="openPage('https://random-page2.netlify.app/')">Page 2</h1>
-    </div>
-    <div class="content5">
-        <div style="--an: 4;" class="wg1"></div>
-        <div style="--an: 4;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 4;" onclick="openPage('https://random-page-2-rework.netlify.app/')">Page 2 ver. 2</h1>
-    </div>
+    </section>
 
+    <!-- Projects Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer (loaded via include) -->
+    <div data-include="/includes/footer.html"></div>
 
-
-
-
-    <div class="content7">
-        <div style="--an: 5;" class="wg1"></div>
-        <div style="--an: 5;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 5;" onclick="openPage('https://randompage3.netlify.app/')">Page 3</h1>
-    </div>
-
-
-    <div class="content8">
-        <div style="--an: 6;" class="wg1"></div>
-        <div style="--an: 6;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 6;" onclick="openPage('https://sebys-page-3-rework.netlify.app/')">Page 3 ver. 2</h1>
-    </div>
-    
-    <div class="content9">
-        <div style="--an: 7;" class="wg1"></div>
-        <div style="--an: 7;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 7;" onclick="openPage('https://sebyrandompage4.netlify.app/')">Page 4</h1>
-    </div>
-    
-    <div class="content10">
-        <div style="--an: 8;" class="wg1"></div>
-        <div style="--an: 8;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 8;" onclick="openPage('https://sebys-page-4-rework.netlify.app/')">Page 4 ver. 2</h1>
-    </div>
-
-    <div class="content11">
-        <div style="--an: 9;" class="wg1"></div>
-        <div style="--an: 9;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 9;" onclick="openPage('https://sebys-page5.netlify.app/')">Page 5</h1>
-    </div>
-
-    <div class="content12">
-        <div style="--an: 10;" class="wg1"></div>
-        <div style="--an: 10;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 10;" onclick="openPage('https://seby-page-5-rework.netlify.app/')">Page 5 ver. 2</h1>
-    </div>
-
-    <div class="content13">
-        <div style="--an: 11;" class="wg1"></div>
-        <div style="--an: 11;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 11;" onclick="openPage('https://random-page-6-just-a-test.netlify.app/')">Page 6</h1>
-    </div>
-
-    <div class="content14">
-        <div style="--an: 12;" class="wg1"></div>
-        <div style="--an: 12;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 12;"  onclick="openPage('https://sebys-page-6-rework.netlify.app/')">Page 6 ver. 2</h1>
-    </div>
-
-    <div class="content15">
-        <div style="--an: 13;" class="wg1"></div>
-        <div style="--an: 13;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 13;" onclick="openPage('https://random-page-7.netlify.app/')">Page 7</h1>
-    </div>
-
-
-    <div class="content16">
-        <div style="--an: 14;" class="wg1"></div>
-        <div style="--an: 14;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 14;" onclick="openPage('https://sebys-page-7-rework.netlify.app/')">Page 7 ver. 2</h1>
-    </div>
-
-
-    <div class="content17">
-        <div style="--an: 15;" class="wg1"></div>
-        <div style="--an: 15;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 15;" onclick="openPage('https://random-page-8.netlify.app/')">Page 8</h1>
-    </div>
-
-
-    <div class="content18">
-        <div style="--an: 16;" class="wg1"></div>
-        <div style="--an: 16;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 16;" onclick="openPage('https://sebys-page-8-reworked.netlify.app/')">Page 8 ver. 2</h1>
-    </div>
-
-
-
-    <div class="content19">
-        <div style="--an: 17;" class="wg1"></div>
-        <div style="--an: 17;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 17;" >Page 9 Rest in peace | php project lost</h1>
-    </div>
-
-
-    <div class="content20">
-        <div style="--an: 18;" class="wg1"></div>
-        <div style="--an: 18;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 18;" onclick="openPage('https://sebys-page-10-assets-page.netlify.app/')">Page 10</h1>
-    </div>
-
-
-
-    <div class="content21">
-        <div style="--an: 19;" class="wg1"></div>
-        <div style="--an: 19;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 19;" onclick="openPage('https://seby-page-11.netlify.app/')">Page 11</h1>
-    </div>
-
-
-
-    <div class="content22">
-        <div style="--an: 20;" class="wg1"></div>
-        <div style="--an: 20;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 20;" onclick="openPage('https://seby-page-12.netlify.app/')">Page 12 Old Main Page</h1>
-    </div>
-
-
-
-
-    <div class="up">
-        <div style="--an: 21;" class="wg1"></div>
-        <div style="--an: 21;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 21;" onclick="openPage('https://sebys-page-13.netlify.app/')">Page 13</h1>
-    </div>
-
-
-
-
-    <div class="to">
-        <div style="--an: 22;" class="wg1"></div>
-        <div style="--an: 22;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 22;" onclick="openPage('https://sebys-page-14.netlify.app/')">Page 14</h1>
-    </div>
-
-
-    <div class="down">
-        <div style="--an: 23;" class="wg1"></div>
-        <div style="--an: 23;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 23;" onclick="openPage('https://seby-page-15.netlify.app/')">Page 15</h1>
-    </div>
-
-    <div class="its written from">
-        <div style="--an: 24;" class="wg1"></div>
-        <div style="--an: 24;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 24;" onclick="openPage('https://sebys-page-16.netlify.app/')">Page 16 | Forgotten</h1>
-    </div>
-
-    <div class="also">
-        <div style="--an: 25;" class="wg1"></div>
-        <div style="--an: 25;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 25; text-align: center;">From down here are just MAIN PAGES and DISCLAIMERS <br> In chronological order</h1>
-    </div>
-
-    <div class="not here">
-        <div style="--an: 26;" class="wg1"></div>
-        <div style="--an: 26;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 26;" onclick="openPage('https://sebys-test-mainpage.netlify.app/')">Main Page 1</h1>
-    </div>
-
-    <div class="does it ?">
-        <div style="--an: 27;" class="wg1"></div>
-        <div style="--an: 27;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 27;" onclick="openPage('https://sebys-mainpage.netlify.app/')">Main Page 2</h1>
-    </div>
-
-    <div class="this_classes_dont matter">
-        <div style="--an: 28;" class="wg1"></div>
-        <div style="--an: 28;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 28;" onclick="openPage('https://sebys-main-page-reworked.netlify.app/')">Main Page 3</h1>
-    </div>
-    <div class="brrrr">
-        <div style="--an: 29;" class="wg1"></div>
-        <div style="--an: 29;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 29;" onclick="openPage('https://v3-main-page.netlify.app/')">Main Page 4</h1>
-    </div>
-    <div class="blalala">
-        <div style="--an: 30;" class="wg1"></div>
-        <div style="--an: 30;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 30;" onclick="openPage('https://i-disclaimer.netlify.app/')">Disclaimer Page 1</h1>
-    </div>
-    <div class="blahblah">
-        <div style="--an: 31;" class="wg1"></div>
-        <div style="--an: 31;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 31;" onclick="openPage('https://i-disclaimer-reworked.netlify.app/')">Disclaimer Page 1</h1>
-    </div>
-    <div class="blah">
-        <div style="--an: 32;" class="wg1"></div>
-        <div style="--an: 32;" class="divider1">LOADED</div>
-        <h1 style="--animation-order: 32;" onclick="openPage('https://v3-sebys-disclaimer.netlify.app/')">Disclaimer Page 1</h1>
-    </div>
-
-
-</div>
-
-
-<div id="dicnt">
-    <p>This is a disclaimer. <br> I DONT CARE what you will see, I am not responsible of anything youre about to see on some <br> And please be understandable, I was a teen when i was doing some pages. <Br> I hope you'll appriciate my work so far.<br>Press "Ok" to continue</p>
-    <button id="okey">OK</button>
-  </div>
-
-
-<div id="cpr">© SilverSniper | 2021-2025</div>
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/projects.js"></script>
 </body>
 </html>

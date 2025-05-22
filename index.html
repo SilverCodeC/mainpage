@@ -3,77 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | MainPageV5</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="global-settings.css">
-        <meta property="og:title" content="SilverSniper's Main Page v5">
-        <meta property="og:description" content="I decided to make a new one.">
-        <meta property="og:image" content="https://silversnipers.com/assets/cs.jpg">
-        <meta property="og:image:width" content="500">
-        <meta property="og:image:height" content="500">
-        <meta property="og:url" content="https://silversnipers.com/">
-        <meta property="og:type" content="Any">
-        <meta property="og:site_name" content="SS's MPV5">
-        <meta property="og:locale" content="en_US">
-        <meta name="author" content="SilverSniper Obviously">
-        <meta property="article:published_time" content="2025-01-17T19:00:00+00:00">
-        <meta name="date" content="2025-01-17T19:00:00+00:00" scheme="YYYY-MM-DDTHH:MM:SS+00:00">
-    <link rel="shortcut icon" href="./android-chrome-192x192.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./android-chrome-512x512.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon-16x16.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>SilverSniper | Developer & Technology Enthusiast Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SilverSniper is a developer and technology enthusiast specializing in web development, networking, and system administration. View projects, skills, and more.">
+    <meta name="keywords" content="SilverSniper, web developer, technology enthusiast, portfolio, proxmox, networking, web design">
+    <meta name="author" content="SilverSniper">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://silversnipers.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://silversnipers.com/">
+    <meta property="og:title" content="SilverSniper | Developer & Technology Enthusiast">
+    <meta property="og:description" content="SilverSniper is a developer and technology enthusiast specializing in web development, networking, and system administration.">
+    <meta property="og:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://silversnipers.com/">
+    <meta property="twitter:title" content="SilverSniper | Developer & Technology Enthusiast">
+    <meta property="twitter:description" content="SilverSniper is a developer and technology enthusiast specializing in web development, networking, and system administration.">
+    <meta property="twitter:image" content="https://silversnipers.com/assets/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/76661d0faf.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts - Geist Sans & Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Geist+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Include System -->
+    <script src="/assets/js/includes.js"></script>
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "SilverSniper",
+      "url": "https://silversnipers.com",
+      "sameAs": [
+        "https://github.com/yourusername",
+        "https://linkedin.com/in/yourusername",
+        "https://twitter.com/yourusername"
+      ],
+      "jobTitle": "Developer & Technology Enthusiast",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SilverSniper"
+      },
+      "description": "Developer and technology enthusiast with expertise in web development, networking, and system administration."
+    }
+    </script>
 </head>
-<body>
-    <div id="rain"></div>
-    <div class="container">
-        <div class="moon"></div>
-      </div>
-    <nav>
-        <div class="nav-items">
-            <li></li>
-            <li><a id="home" href="./index.html">Home</a></li>
-            <li></li>
-            <li><a id="projects" href="./pages/projects/index.html">Projects</a></li>
-            <li></li>
-            <li><a id="skills" href="./pages/skills/index.html">Skills</a></li>
-            <li></li>
-            <li><a id="bio" href="./pages/bio/index.html">Bio</a></li>
-            <li></li>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+    <!-- Header (loaded via include) -->
+    <div data-include="/includes/header.html"></div>
+
+    <!-- Hero Section -->
+    <section class="py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="text-white">Hi, I'm </span>
+                    <span class="text-emerald-400">SilverSniper</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-zinc-400 mb-8">Developer & Technology Enthusiast</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/pages/projects/" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-md transition-colors">
+                        View Projects
+                    </a>
+                    <a href="/pages/bio/" class="px-6 py-3 bg-zinc-800 hover:bg-zinc-700 text-white rounded-md transition-colors">
+                        About Me
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="wg"></div>
-    </nav>
-    <div class="divider">LOADED</div>
-    <div class="content1">
-        <div class="d1">
-        <h1>SilverSniper</h1>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-16 bg-zinc-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Featured Projects</h2>
+                    <a href="/pages/projects/" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                        View All <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-zinc-800 rounded-lg overflow-hidden hover:translate-y-[-4px] transition-transform">
+                        <div class="h-48 bg-zinc-700 flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-5xl text-zinc-500" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Main Page V4</h3>
+                            <p class="text-zinc-400 mb-4">A responsive landing page with modern design elements.</p>
+                            <a href="https://v3-main-page.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                View Project <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-zinc-800 rounded-lg overflow-hidden hover:translate-y-[-4px] transition-transform">
+                        <div class="h-48 bg-zinc-700 flex items-center justify-center">
+                            <i class="fas fa-code text-5xl text-zinc-500" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Page 8 Redesign</h3>
+                            <p class="text-zinc-400 mb-4">A modern web application with clean UI and smooth interactions.</p>
+                            <a href="https://sebys-page-8-reworked.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                View Project <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="bg-zinc-800 rounded-lg overflow-hidden hover:translate-y-[-4px] transition-transform">
+                        <div class="h-48 bg-zinc-700 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-5xl text-zinc-500" aria-hidden="true"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Assets Page</h3>
+                            <p class="text-zinc-400 mb-4">A collection of design assets and resources for developers.</p>
+                            <a href="https://sebys-page-10-assets-page.netlify.app/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                View Project <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-<div class="master">
-    <div class="content2">
-        <div class="wg1"></div>
-        <div class="divider1">LOADED</div>
-        <h1>Summary</h1>
-    </div>
-    <div class="content3">
-        <div class="wg2"></div>
-        <div class="divider2">LOADED</div>
-        <h1>I am SilverSniper</h1>
-        
-    </div>
-    <div class="content4">
-        <div class="wg3"></div>
-        <div class="divider3">LOADED</div>
-        <h1>Self Taught web dev and more</h1>
-    </div>
-    <div class="content5">
-        <div class="wg4"></div>
-        <div class="divider4">LOADED</div>
-        <h1>Check bio for more</h1>
-    </div>
-</div>
-<div id="cpr">© SilverSniper | 2021-2025</div>
-    <script src="script.js"></script>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex justify-between items-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Skills & Expertise</h2>
+                    <a href="/pages/skills/" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                        View All <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Skill 1 -->
+                    <div class="bg-zinc-800 p-6 rounded-lg text-center hover:bg-zinc-700 transition-colors">
+                        <div class="text-3xl mb-3 text-emerald-400">
+                            <i class="fab fa-html5" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-medium text-white">HTML</h3>
+                    </div>
+                    
+                    <!-- Skill 2 -->
+                    <div class="bg-zinc-800 p-6 rounded-lg text-center hover:bg-zinc-700 transition-colors">
+                        <div class="text-3xl mb-3 text-emerald-400">
+                            <i class="fab fa-css3-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-medium text-white">CSS</h3>
+                    </div>
+                    
+                    <!-- Skill 3 -->
+                    <div class="bg-zinc-800 p-6 rounded-lg text-center hover:bg-zinc-700 transition-colors">
+                        <div class="text-3xl mb-3 text-emerald-400">
+                            <i class="fas fa-server" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-medium text-white">Proxmox</h3>
+                    </div>
+                    
+                    <!-- Skill 4 -->
+                    <div class="bg-zinc-800 p-6 rounded-lg text-center hover:bg-zinc-700 transition-colors">
+                        <div class="text-3xl mb-3 text-emerald-400">
+                            <i class="fas fa-network-wired" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-medium text-white">Networking</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-zinc-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center">About Me</h2>
+                <div class="bg-zinc-800 rounded-lg p-8">
+                    <p class="text-zinc-300 mb-4">
+                        I'm a developer and technology enthusiast with a passion for creating clean, functional web experiences.
+                        My journey in tech has led me to explore various areas including web development, networking, and system administration.
+                    </p>
+                    <p class="text-zinc-300 mb-4">
+                        I believe in continuous learning and pushing my skills to new heights. When I'm not coding, you can find me
+                        exploring new technologies, gaming, or working on my music projects.
+                    </p>
+                    <div class="mt-6">
+                        <a href="/pages/bio/" class="text-emerald-400 hover:text-emerald-300 transition-colors">
+                            Learn more about me <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (loaded via include) -->
+    <div data-include="/includes/footer.html"></div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
